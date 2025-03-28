@@ -1,0 +1,42 @@
+{
+  "name": "@derouter/protocol-openai",
+  "version": "0.1.0",
+  "description": "OpenAI-compatible DeRouter protocol",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derouter/protocol-openai.git"
+  },
+  "keywords": [
+    "derouter",
+    "openai"
+  ],
+  "author": "derouter.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derouter/protocol-openai/issues"
+  },
+  "homepage": "https://github.com/derouter/protocol-openai#readme",
+  "peerDependencies": {
+    "valibot": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@ethersproject/bignumber": "^5.8.0"
+  }
+}
