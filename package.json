@@ -2,6 +2,7 @@
   "name": "@derouter/protocol-openai",
   "version": "0.1.0",
   "description": "OpenAI-compatible DeRouter protocol",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
@@ -34,6 +35,14 @@
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.js"
+    },
+    "./completions": {
+      "import": "./dist/completions.js",
+      "require": "./dist/completions.js"
+    },
+    "./chat/completions": {
+      "import": "./dist/chat/completions.js",
+      "require": "./dist/chat/completions.js"
     }
   },
   "dependencies": {
