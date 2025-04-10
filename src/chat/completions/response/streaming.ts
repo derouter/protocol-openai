@@ -22,12 +22,3 @@ export const CompletionChunkSchema = v.object({
 });
 
 export type CompletionChunk = v.InferOutput<typeof CompletionChunkSchema>;
-
-export type EpilogueChunk = {
-  object: "derouter.epilogue";
-  public_payload: string;
-  balance_delta: string | null;
-  completed_at_sync: number;
-};
-
-export type Chunk = CompletionChunk | EpilogueChunk;

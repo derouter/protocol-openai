@@ -21,21 +21,3 @@ export const CompletionChunkSchema = v.object({
 });
 
 export type CompletionChunk = v.InferOutput<typeof CompletionChunkSchema>;
-
-export type EpilogueChunk = {
-  object: "derouter.epilogue";
-
-  /**
-   * Potentially-publicly-accessible job payload for signing.
-   */
-  public_payload: string;
-
-  /**
-   * Balance delta, in connection's currency.
-   */
-  balance_delta: string | null;
-
-  completed_at_sync: number;
-};
-
-export type Chunk = CompletionChunk | EpilogueChunk;

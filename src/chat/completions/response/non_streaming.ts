@@ -25,9 +25,3 @@ export const ResponseSchema = v.object({
 });
 
 export type Response = v.InferOutput<typeof ResponseSchema>;
-
-export type Epilogue = {
-  public_payload: string;
-  balance_delta: string | null;
-  completed_at_sync: number;
-};
